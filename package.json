@@ -1,0 +1,19 @@
+{
+  "name": "3657-trillo-allende-rosario",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+"scripts": {
+  "dev:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+  "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}
