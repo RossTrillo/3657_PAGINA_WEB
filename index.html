@@ -3,25 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mi Tienda | Celulares y tecnología</title>
 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./src/output.css">
-
-
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 
 <body class="bg-gray-100 text-gray-800">
 
-
     <!-- Barra de navegación -->
-    <nav class="sticky top-0 z-50 flex items-center justify-between
-                bg-white px-6 py-4 shadow-sm">
+    <nav class="sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-4 shadow-sm">
 
         <!-- Logo -->
-
-            <div class="flex h-9 w-9 items-center justify-center
-                        rounded-lg bg-blue-600 font-bold text-white">
+        <a href="#inicio" class="flex items-center gap-2">
+            <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600 font-bold text-white">
                 M
             </div>
 
@@ -30,54 +26,44 @@
             </span>
         </a>
 
-
         <!-- Acciones visuales -->
         <div class="flex items-center gap-3">
-
-           
-            <button type="button"
-                    class="hidden rounded-lg border border-gray-300
-                           px-4 py-2 text-sm font-medium text-gray-700
-                           hover:bg-gray-100 sm:block">
+            <button
+                type="button"
+                class="hidden rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 sm:block"
+            >
                 Iniciar sesión
             </button>
 
-         
-            <button type="button"
-                    class="rounded-lg bg-blue-600 px-4 py-2
-                           text-sm font-medium text-white
-                           hover:bg-blue-700">
-
+            <button
+                type="button"
+                class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+            >
                 Carrito
 
-                <span class="ml-1 rounded-full bg-white
-                             px-2 py-0.5 text-xs font-bold
-                             text-blue-600">
+                <span class="ml-1 rounded-full bg-white px-2 py-0.5 text-xs font-bold text-blue-600">
                     0
                 </span>
             </button>
         </div>
     </nav>
 
-    <!-- VISTA PRINCIPAL -->
+    <!-- Vista principal -->
     <div id="vista-lista">
 
-        <!-- Hero -->
-        <section id="inicio" class="overflow-hidden bg-gradient-to-r
-                                    from-blue-700 to-blue-500
-                                    px-6 py-16 text-white">
-
-            <div class="mx-auto grid max-w-6xl items-center gap-10
-                        md:grid-cols-2">
+        <!-- Presentación -->
+        <section
+            id="inicio"
+            class="overflow-hidden bg-gradient-to-r from-blue-700 to-blue-500 px-6 py-16 text-white"
+        >
+            <div class="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
 
                 <div>
-                    <span class="rounded-full bg-blue-400/30 px-3 py-1
-                                 text-sm font-medium text-blue-100">
+                    <span class="rounded-full bg-blue-400/30 px-3 py-1 text-sm font-medium text-blue-100">
                         Tecnología al mejor precio
                     </span>
 
-                    <h1 class="mt-5 text-4xl font-bold leading-tight
-                               md:text-5xl">
+                    <h1 class="mt-5 text-4xl font-bold leading-tight md:text-5xl">
                         Encuentra el celular ideal para ti.
                     </h1>
 
@@ -85,8 +71,6 @@
                         Descubre smartphones, tablets y accesorios de las mejores
                         marcas. Compra tecnología de forma rápida, segura y sencilla.
                     </p>
-
-                 
 
                     <div class="mt-10 flex gap-8 text-sm">
                         <div>
@@ -108,11 +92,14 @@
 
                 <div class="flex justify-center">
                     <div class="rounded-3xl bg-white/10 p-6 shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80"
-                             alt="Celular moderno"
-                             class="h-80 w-56 rounded-2xl object-cover shadow-2xl">
+                        <img
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80"
+                            alt="Celular moderno"
+                            class="h-80 w-56 rounded-2xl object-cover shadow-2xl"
+                        >
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -121,8 +108,7 @@
             <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
 
                 <article class="flex items-center gap-4">
-                    <div class="flex h-12 w-12 items-center justify-center
-                                rounded-full bg-blue-100 text-2xl">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-2xl">
                         🚚
                     </div>
 
@@ -138,8 +124,7 @@
                 </article>
 
                 <article class="flex items-center gap-4">
-                    <div class="flex h-12 w-12 items-center justify-center
-                                rounded-full bg-blue-100 text-2xl">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-2xl">
                         🛡️
                     </div>
 
@@ -155,8 +140,7 @@
                 </article>
 
                 <article class="flex items-center gap-4">
-                    <div class="flex h-12 w-12 items-center justify-center
-                                rounded-full bg-blue-100 text-2xl">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-2xl">
                         💬
                     </div>
 
@@ -170,38 +154,67 @@
                         </p>
                     </div>
                 </article>
+
             </div>
         </section>
 
-        <!-- Filtros -->
+        <!-- Filtros por categoría -->
         <section class="border-b border-gray-200 bg-gray-50">
-            <div class="mx-auto flex max-w-6xl flex-wrap justify-center
-                        gap-2 px-6 py-4">
-
-                <button type="button"
-                        class="rounded-full bg-blue-600 px-4 py-1.5
-                               text-sm font-medium text-white">
+            <div
+                id="filtros-categorias"
+                class="mx-auto flex max-w-6xl flex-wrap justify-center gap-2 px-6 py-4"
+            >
+                <button
+                    type="button"
+                    data-categoria="todos"
+                    aria-pressed="true"
+                    class="rounded-full bg-blue-600 px-4 py-1.5 text-sm font-medium text-white"
+                >
                     Todos
                 </button>
 
-                <button type="button"
-                        class="rounded-full bg-white px-4 py-1.5
-                               text-sm font-medium text-gray-700 shadow-sm
-                               hover:bg-gray-100">
+                <button
+                    type="button"
+                    data-categoria="Celulares"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
                     Celulares
                 </button>
 
-                <button type="button"
-                        class="rounded-full bg-white px-4 py-1.5
-                               text-sm font-medium text-gray-700 shadow-sm
-                               hover:bg-gray-100">
+                <button
+                    type="button"
+                    data-categoria="Laptops"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
+                    Laptops
+                </button>
+
+                <button
+                    type="button"
+                    data-categoria="Tablets"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
                     Tablets
                 </button>
 
-                <button type="button"
-                        class="rounded-full bg-white px-4 py-1.5
-                               text-sm font-medium text-gray-700 shadow-sm
-                               hover:bg-gray-100">
+                <button
+                    type="button"
+                    data-categoria="Computadoras"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
+                    Computadoras
+                </button>
+
+                <button
+                    type="button"
+                    data-categoria="Accesorios"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
                     Accesorios
                 </button>
             </div>
@@ -212,8 +225,7 @@
 
             <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
                 <div>
-                    <p class="text-sm font-semibold uppercase tracking-wide
-                              text-blue-600">
+                    <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">
                         Catálogo
                     </p>
 
@@ -226,31 +238,36 @@
                     </p>
                 </div>
 
-                <span class="rounded-lg bg-blue-100 px-4 py-2
-                             text-sm font-medium text-blue-700">
+                <span class="rounded-lg bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
                     Nuevos productos cada semana
                 </span>
             </div>
 
-            <section id="vista-productos" class="grid grid-cols-1 gap-6
-                                                 sm:grid-cols-2
-                                                 md:grid-cols-3
-                                                 lg:grid-cols-4">
-            </section>
+            <!-- Mensajes de carga, errores o resultados -->
+            <p
+                id="mensaje-catalogo"
+                class="mb-4 text-sm text-gray-600"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <!-- Las tarjetas se generan desde app.js -->
+            <section
+                id="vista-productos"
+                class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                aria-label="Lista de productos"
+            ></section>
         </section>
 
         <!-- Marcas -->
         <section class="bg-white px-6 py-12">
             <div class="mx-auto max-w-6xl text-center">
 
-                <p class="text-sm font-semibold uppercase tracking-wide
-                          text-gray-500">
+                <p class="text-sm font-semibold uppercase tracking-wide text-gray-500">
                     Marcas disponibles
                 </p>
 
-                <div class="mt-7 grid grid-cols-2 gap-4 text-lg font-bold
-                            text-gray-500 sm:grid-cols-4">
-
+                <div class="mt-7 grid grid-cols-2 gap-4 text-lg font-bold text-gray-500 sm:grid-cols-4">
                     <div class="rounded-lg bg-gray-100 px-4 py-4">
                         Apple
                     </div>
@@ -267,17 +284,16 @@
                         Oppo
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Sobre -->
+        <!-- Sobre nosotros -->
         <section id="sobre" class="px-6 py-16">
-            <div class="mx-auto grid max-w-6xl items-center gap-10
-                        md:grid-cols-2">
+            <div class="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
 
                 <div>
-                    <p class="text-sm font-semibold uppercase tracking-wide
-                              text-blue-600">
+                    <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">
                         Sobre nosotros
                     </p>
 
@@ -286,17 +302,16 @@
                     </h2>
 
                     <p class="mt-5 leading-relaxed text-gray-600">
-                         Tu marketplace de confianza. 
-                         Encuentra lo último en tecnología, smartphones y moda para toda la familia. 
-                         Calidad, variedad y los mejores precios. ¡Compra seguro hoy!
+                        Tu marketplace de confianza. Encuentra lo último en
+                        tecnología, smartphones y moda para toda la familia.
+                        Calidad, variedad y los mejores precios. ¡Compra seguro hoy!
                     </p>
-
-
                 </div>
 
                 <div class="grid grid-cols-2 gap-4">
                     <div class="rounded-xl bg-blue-600 p-6 text-white">
                         <p class="text-3xl font-bold">100%</p>
+
                         <p class="mt-2 text-sm text-blue-100">
                             Productos con descuento
                         </p>
@@ -304,6 +319,7 @@
 
                     <div class="rounded-xl bg-white p-6 shadow-sm">
                         <p class="text-3xl font-bold text-blue-600">3</p>
+
                         <p class="mt-2 text-sm text-gray-500">
                             Categorías principales
                         </p>
@@ -320,6 +336,7 @@
                         </p>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -328,8 +345,7 @@
             <div class="mx-auto max-w-6xl">
 
                 <div class="mb-8 text-center">
-                    <p class="text-sm font-semibold uppercase tracking-wide
-                              text-blue-600">
+                    <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">
                         Servicios
                     </p>
 
@@ -340,9 +356,7 @@
 
                 <div class="grid gap-6 md:grid-cols-3">
 
-                    <article class="rounded-xl border border-gray-200 p-6
-                                    text-center">
-
+                    <article class="rounded-xl border border-gray-200 p-6 text-center">
                         <div class="text-3xl">📱</div>
 
                         <h3 class="mt-3 font-bold text-gray-800">
@@ -354,9 +368,7 @@
                         </p>
                     </article>
 
-                    <article class="rounded-xl border border-gray-200 p-6
-                                    text-center">
-
+                    <article class="rounded-xl border border-gray-200 p-6 text-center">
                         <div class="text-3xl">🎧</div>
 
                         <h3 class="mt-3 font-bold text-gray-800">
@@ -368,9 +380,7 @@
                         </p>
                     </article>
 
-                    <article class="rounded-xl border border-gray-200 p-6
-                                    text-center">
-
+                    <article class="rounded-xl border border-gray-200 p-6 text-center">
                         <div class="text-3xl">🔧</div>
 
                         <h3 class="mt-3 font-bold text-gray-800">
@@ -381,6 +391,7 @@
                             Próximamente: asesoría y soporte para dispositivos.
                         </p>
                     </article>
+
                 </div>
             </div>
         </section>
@@ -424,64 +435,74 @@
                             Jr. de la Unión 257, Lima - Perú
                         </p>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Footer -->
+        <!-- Pie de página -->
         <footer class="bg-gray-800 px-6 py-8 text-center text-sm text-gray-300">
             <p>© 2026 Mi Tienda. Todos los derechos reservados.</p>
         </footer>
+
     </div>
 
-    <!-- VISTA DETALLE -->
+    <!-- Vista de detalle del producto -->
     <section id="vista-detalle" class="hidden px-6 py-12">
         <div class="mx-auto max-w-4xl">
 
-            <button id="btn-volver"
-                    class="mb-6 rounded-lg bg-blue-600 px-4 py-2
-                           text-sm font-medium text-white
-                           hover:bg-blue-700">
+            <button
+                id="btn-volver"
+                type="button"
+                class="mb-6 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+            >
                 ← Volver al catálogo
             </button>
 
-            <div class="flex flex-col gap-8 rounded-2xl bg-white p-6
-                        shadow-md md:flex-row">
+            <div class="flex flex-col gap-8 rounded-2xl bg-white p-6 shadow-md md:flex-row">
 
                 <div class="flex items-center justify-center md:w-1/2">
-                    <img id="det-imagen"
-                         src=""
-                         alt="Producto seleccionado"
-                         class="h-72 w-full object-contain">
+                    <img
+                        id="det-imagen"
+                        alt="Producto seleccionado"
+                        class="h-72 w-full object-contain"
+                        hidden
+                    >
                 </div>
 
                 <div class="flex-1">
+                    <span
+                        id="det-categoria"
+                        class="rounded-full bg-blue-100 px-2 py-1 text-xs capitalize text-blue-700"
+                    ></span>
 
-                    <span id="det-categoria"
-                          class="rounded-full bg-blue-100 px-2 py-1
-                                 text-xs capitalize text-blue-700">
-                    </span>
+                    <h2
+                        id="det-titulo"
+                        class="mt-3 text-2xl font-bold text-gray-800"
+                    ></h2>
 
-                    <h2 id="det-titulo"
-                        class="mt-3 text-2xl font-bold text-gray-800">
-                    </h2>
+                    <p
+                        id="det-precio"
+                        class="mt-3 text-3xl font-bold text-blue-600"
+                    ></p>
 
-                    <p id="det-precio"
-                       class="mt-3 text-3xl font-bold text-blue-600">
-                    </p>
+                    <p
+                        id="det-rating"
+                        class="mt-2 text-yellow-500"
+                    ></p>
 
-                    <p id="det-rating"
-                       class="mt-2 text-yellow-500">
-                    </p>
-
-                    <p id="det-desc"
-                       class="mt-4 leading-relaxed text-gray-600">
-                    </p>
+                    <p
+                        id="det-desc"
+                        class="mt-4 leading-relaxed text-gray-600"
+                    ></p>
                 </div>
+
             </div>
         </div>
     </section>
 
+    <!-- Lógica del catálogo -->
+    <script src="./app.js"></script>
+
 </body>
-    <script src="app.js"></script>
 </html>

@@ -1,0 +1,22 @@
+{
+    "name": "usuario/3657trilloallenderosario",
+    "autoload": {
+        "psr-4": {
+            "Usuario\\3657trilloallenderosario\\": "src/",
+                "App\\": "app/",
+    "Config\\": "config/",
+    "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rosariotrillo07",
+            "email": "rosario.trillo07@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "*"
+    }
+    
+    
+}

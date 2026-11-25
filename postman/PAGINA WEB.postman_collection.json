@@ -1,0 +1,3099 @@
+{
+  "info": {
+    "_postman_id": "f2910aee-0729-46c3-a592-07a1ff29820f",
+    "name": "PAGINA WEB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37384403"
+  },
+  "item": [
+    {
+      "name": "Productos",
+      "item": [
+        {
+          "name": "Listar productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "productos"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Listar productos",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "productos"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:28:56 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "3502"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Productos obtenidos correctamente\",\n  \"data\": [\n    {\n      \"id_producto\": 6,\n      \"id_categoria\": 4,\n      \"categoria\": \"Computadoras\",\n      \"id_proveedor\": 3,\n      \"proveedor\": \"Importaciones Tecno Sur\",\n      \"nombre\": \"Apple Mac mini con chip M4\",\n      \"marca\": \"Apple\",\n      \"descripcion\": \"Computadora de escritorio con 16 GB de memoria y SSD de 256 GB\",\n      \"imagen\": \"https://media.falabella.com.pe/falabellaPE/158814310_01/width=170,height=170,quality=70,format=webp,fit=pad\",\n      \"precio\": \"3299.00\",\n      \"stock\": 4,\n      \"activo\": 1\n    },\n    {\n      \"id_producto\": 3,\n      \"id_categoria\": 2,\n      \"categoria\": \"Laptops\",\n      \"id_proveedor\": 1,\n      \"proveedor\": \"Distribuidora Digital Andina\",\n      \"nombre\": \"ASUS Vivobook 15\",\n      \"marca\": \"ASUS\",\n      \"descripcion\": \"Laptop de 15.6 pulgadas con SSD de 512 GB\",\n      \"imagen\": \"https://media.falabella.com/tottusPE/43674267_1/w=1500,h=1500,fit=cover\",\n      \"precio\": \"2499.00\",\n      \"stock\": 6,\n      \"activo\": 1\n    },\n    {\n      \"id_producto\": 9,\n      \"id_categoria\": 5,\n      \"categoria\": \"Accesorios\",\n      \"id_proveedor\": 3,\n      \"proveedor\": \"Importaciones Tecno Sur\",\n      \"nombre\": \"Audífonos Galaxy Buds2 Pro\",\n      \"marca\": \"Samsung\",\n      \"descripcion\": \"Audífonos inalámbricos con estuche de carga\",\n      \"imagen\": \"https://media.falabella.com.pe/falabellaPE/152881513_01/width=170,height=170,quality=70,format=webp,fit=pad\",\n      \"precio\": \"659.00\",\n      \"stock\": 10,\n      \"activo\": 1\n    },\n    {\n      \"id_producto\": 8,\n      \"id_categoria\": 5,\n      \"categoria\": \"Accesorios\",\n      \"id_proveedor\": 2,\n      \"proveedor\": \"Tecnología y Equipos del Perú\",\n      \"nombre\": \"Cable de carga USB-C\",\n      \"marca\": \"Apple\",\n      \"descripcion\": \"Cable USB-C para carga y transferencia de datos\",\n      \"imagen\": \"https://media.falabella.com.pe/falabellaPE/152562072_01/width=170,height=170,quality=70,format=webp,fit=pad\",\n      \"precio\": \"119.00\",\n      \"stock\": 15,\n      \"activo\": 1\n    },\n    {\n      \"id_producto\": 7,\n      \"id_categoria\": 5,\n      \"categoria\": \"Accesorios\",\n      \"id_proveedor\": 1,\n      \"proveedor\": \"Distribuidora Digital Andina\",\n      \"nombre\": \"Cargador USB-C de 25 W\",\n      \"marca\": \"Samsung\",\n      \"descripcion\": \"Cargador de pared para dispositivos compatibles con USB-C\",\n      \"imagen\": \"https://media.falabella.com.pe/falabellaPE/143981307_01/width=170,height=170,quality=70,format=webp,fit=pad\",\n      \"precio\": \"89.00\",\n      \"stock\": 20,\n      \"activo\": 1\n    },\n    {\n      \"id_producto\": 5,\n      \"id_categoria\": 3,\n      \"categoria\": \"Tablets\",\n      \"id_proveedor\": 2,\n      \"proveedor\": \"Tecnología y Equipos del Perú\",\n      \"nombre\": \"iPad Air de 11 pulgadas con chip M3\",\n      \"marca\": \"Apple\",\n      \"descripcion\": \"Tablet con chip Apple M3 y 128 GB de almacenamiento\",\n      \"imagen\": \"https://media.falabella.com.pe/falabellaPE/130691430_01/width=170,height=170,quality=70,format=webp,fit=pad\",\n      \"precio\": \"2999.00\",\n      \"stock\": 7,\n      \"activo\": 1\n    },\n    {\n      \"id_producto\": 2,\n      \"id_categoria\": 1,\n      \"categoria\": \"Celulares\",\n      \"id_proveedor\": 2,\n      \"proveedor\": \"Tecnología y Equipos del Perú\",\n      \"nombre\": \"iPhone 15\",\n      \"marca\": \"Apple\",\n      \"descripcion\": \"Celular con 128 GB de almacenamiento\",\n      \"imagen\": \"https://media.falabella.com/falabellaPE/20039955_01/w=1500,h=1500,fit=cover\",\n      \"precio\": \"2999.00\",\n      \"stock\": 10,\n      \"activo\": 1\n    },\n    {\n      \"id_producto\": 4,\n      \"id_categoria\": 2,\n      \"categoria\": \"Laptops\",\n      \"id_proveedor\": 3,\n      \"proveedor\": \"Importaciones Tecno Sur\",\n      \"nombre\": \"MacBook Air de 13 pulgadas con chip M3\",\n      \"marca\": \"Apple\",\n      \"descripcion\": \"Laptop portátil con chip Apple M3\",\n      \"imagen\": \"https://media.falabella.com.pe/falabellaPE/159007277_01/width=170,height=170,quality=70,format=webp,fit=pad\",\n      \"precio\": \"4699.00\",\n      \"stock\": 5,\n      \"activo\": 1\n    },\n    {\n      \"id_producto\": 1,\n      \"id_categoria\": 1,\n      \"categoria\": \"Celulares\",\n      \"id_proveedor\": 1,\n      \"proveedor\": \"Distribuidora Digital Andina\",\n      \"nombre\": \"Samsung Galaxy S24 Ultra\",\n      \"marca\": \"Samsung\",\n      \"descripcion\": \"Celular con 12 GB de RAM y 256 GB de almacenamiento\",\n      \"imagen\": \"https://media.falabella.com/falabellaPE/155430867_01/public\",\n      \"precio\": \"4299.00\",\n      \"stock\": 8,\n      \"activo\": 1\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Crear producto",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_categoria\": 1,\r\n  \"id_proveedor\": 1,\r\n  \"nombre\": \"Producto de prueba\",\r\n  \"marca\": \"Marca de prueba\",\r\n  \"descripcion\": \"Producto temporal para comprobar el CRUD\",\r\n  \"imagen\": null,\r\n  \"precio\": \"125.50\",\r\n  \"stock\": 5,\r\n  \"activo\": true\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos\n",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "productos\n"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Crear producto",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"id_categoria\": 1,\r\n  \"id_proveedor\": 1,\r\n  \"nombre\": \"Producto de prueba\",\r\n  \"marca\": \"Marca de prueba\",\r\n  \"descripcion\": \"Producto temporal para comprobar el CRUD\",\r\n  \"imagen\": null,\r\n  \"precio\": \"125.50\",\r\n  \"stock\": 5,\r\n  \"activo\": true\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos\n",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "productos\n"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:31:01 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "88"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Producto registrado correctamente\",\n  \"data\": {\n    \"id_producto\": 10\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Consultar producto",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos/10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "productos",
+                "10"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Consultar producto",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos/10",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "productos",
+                    "10"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:32:48 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "353"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Producto obtenido correctamente\",\n  \"data\": {\n    \"id_producto\": 10,\n    \"id_categoria\": 1,\n    \"categoria\": \"Celulares\",\n    \"id_proveedor\": 1,\n    \"proveedor\": \"Distribuidora Digital Andina\",\n    \"nombre\": \"Producto de prueba\",\n    \"marca\": \"Marca de prueba\",\n    \"descripcion\": \"Producto temporal para comprobar el CRUD\",\n    \"imagen\": null,\n    \"precio\": \"125.50\",\n    \"stock\": 5,\n    \"activo\": 1\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Actualizar producto",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_categoria\": 1,\r\n  \"id_proveedor\": 1,\r\n  \"nombre\": \"Producto de prueba actualizado\",\r\n  \"marca\": \"Marca de prueba\",\r\n  \"descripcion\": \"Producto actualizado desde Postman\",\r\n  \"imagen\": null,\r\n  \"precio\": \"150.00\",\r\n  \"stock\": 8,\r\n  \"activo\": true\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos/10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "productos",
+                "10"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Actualizar producto",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"id_categoria\": 1,\r\n  \"id_proveedor\": 1,\r\n  \"nombre\": \"Producto de prueba actualizado\",\r\n  \"marca\": \"Marca de prueba\",\r\n  \"descripcion\": \"Producto actualizado desde Postman\",\r\n  \"imagen\": null,\r\n  \"precio\": \"150.00\",\r\n  \"stock\": 8,\r\n  \"activo\": true\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos/10",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "productos",
+                    "10"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:35:52 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "75"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Producto actualizado correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Crear producto con categoría inexistente",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_categoria\": 4294967295,\r\n  \"id_proveedor\": 1,\r\n  \"nombre\": \"Producto de prueba actualizado\",\r\n  \"marca\": \"Marca de prueba\",\r\n  \"descripcion\": \"Producto actualizado desde Postman\",\r\n  \"imagen\": null,\r\n  \"precio\": \"150.00\",\r\n  \"stock\": 8,\r\n  \"activo\": true\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "productos"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Crear producto con categoría inexistente",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"id_categoria\": 4294967295,\r\n  \"id_proveedor\": 1,\r\n  \"nombre\": \"Producto de prueba actualizado\",\r\n  \"marca\": \"Marca de prueba\",\r\n  \"descripcion\": \"Producto actualizado desde Postman\",\r\n  \"imagen\": null,\r\n  \"precio\": \"150.00\",\r\n  \"stock\": 8,\r\n  \"activo\": true\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "productos"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:40:32 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "62"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": false,\n  \"message\": \"La categoría indicada no existe\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Desactivar producto",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos/10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "productos",
+                "10"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Desactivar producto",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/productos/10",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "productos",
+                    "10"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:42:38 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "75"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Producto desactivado correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Categorías",
+      "item": [
+        {
+          "name": "Crear categoría",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Gaming\",\r\n  \"descripcion\": \"Productos para videojuegos\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "categorias"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Crear categoría",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombre\": \"Gaming\",\r\n  \"descripcion\": \"Productos para videojuegos\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "categorias"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 13:16:00 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "90"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Categoría registrada correctamente\",\n  \"data\": {\n    \"id_categoria\": 6\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Listar categorías",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "categorias"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Listar categorías",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "categorias"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 22:20:41 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "575"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Categorías obtenidas correctamente\",\n  \"data\": [\n    {\n      \"id_categoria\": 5,\n      \"nombre\": \"Accesorios\",\n      \"descripcion\": \"Accesorios para dispositivos tecnológicos\"\n    },\n    {\n      \"id_categoria\": 1,\n      \"nombre\": \"Celulares\",\n      \"descripcion\": \"Teléfonos inteligentes\"\n    },\n    {\n      \"id_categoria\": 4,\n      \"nombre\": \"Computadoras\",\n      \"descripcion\": \"Computadoras de escritorio\"\n    },\n    {\n      \"id_categoria\": 6,\n      \"nombre\": \"Gaming\",\n      \"descripcion\": \"Productos para videojuegos\"\n    },\n    {\n      \"id_categoria\": 2,\n      \"nombre\": \"Laptops\",\n      \"descripcion\": \"Computadoras portátiles\"\n    },\n    {\n      \"id_categoria\": 3,\n      \"nombre\": \"Tablets\",\n      \"descripcion\": \"Tabletas electrónicas\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Consultar categoría",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "categorias",
+                "6"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Consultar categoría",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias/6",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "categorias",
+                    "6"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 22:35:32 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "149"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Categoría obtenida correctamente\",\n  \"data\": {\n    \"id_categoria\": 6,\n    \"nombre\": \"Gaming\",\n    \"descripcion\": \"Productos para videojuegos\"\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Actualizar categoría",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Gaming actualizado\",\r\n  \"descripcion\": \"Productos y accesorios para videojuegos\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "categorias",
+                "6"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Actualizar categoría",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombre\": \"Gaming actualizado\",\r\n  \"descripcion\": \"Productos y accesorios para videojuegos\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias/6",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "categorias",
+                    "6"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 22:44:47 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "77"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Categoría actualizada correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eliminar categoría",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "categorias",
+                "6"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Eliminar categoría",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias/6",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "categorias",
+                    "6"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 22:50:54 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "75"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Categoría eliminada correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eliminar categoría con productos",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "categorias",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Eliminar categoría con productos",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/categorias/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "categorias",
+                    "1"
+                  ]
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 22:52:23 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "97"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": false,\n  \"message\": \"No se puede eliminar la categoría porque tiene productos asociados\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proveedores",
+      "item": [
+        {
+          "name": "Listar proveedores",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "proveedores"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Listar proveedores",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "proveedores"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 22:58:35 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "541"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Proveedores obtenidos correctamente\",\n  \"data\": [\n    {\n      \"id_proveedor\": 1,\n      \"nombre\": \"Distribuidora Digital Andina\",\n      \"telefono\": \"987654321\",\n      \"correo\": \"digitalandina.2471@gmail.com\",\n      \"direccion\": \"Av. Argentina 1250, Lima\"\n    },\n    {\n      \"id_proveedor\": 3,\n      \"nombre\": \"Importaciones Tecno Sur\",\n      \"telefono\": \"965432109\",\n      \"correo\": \"tecnosur.3956@gmail.com\",\n      \"direccion\": \"Jr. Paruro 680, Lima\"\n    },\n    {\n      \"id_proveedor\": 2,\n      \"nombre\": \"Tecnología y Equipos del Perú\",\n      \"telefono\": \"976543210\",\n      \"correo\": \"equiposperu.6824@gmail.com\",\n      \"direccion\": \"Av. Arequipa 840, Lima\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Crear proveedor",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Proveedor de prueba\",\r\n  \"telefono\": \"999888777\",\r\n  \"correo\": \"proveedor.prueba@example.com\",\r\n  \"direccion\": \"Av. Principal 123\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "proveedores"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Crear proveedor",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombre\": \"Proveedor de prueba\",\r\n  \"telefono\": \"999888777\",\r\n  \"correo\": \"proveedor.prueba@example.com\",\r\n  \"direccion\": \"Av. Principal 123\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "proveedores"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:00:16 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "89"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Proveedor registrado correctamente\",\n  \"data\": {\n    \"id_proveedor\": 4\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Consultor proveedor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "proveedores",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Consultor proveedor",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "proveedores",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:04:07 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "213"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Proveedor obtenido correctamente\",\n  \"data\": {\n    \"id_proveedor\": 4,\n    \"nombre\": \"Proveedor de prueba\",\n    \"telefono\": \"999888777\",\n    \"correo\": \"proveedor.prueba@example.com\",\n    \"direccion\": \"Av. Principal 123\"\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Actualizar proveedor",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Proveedor de prueba actualizado\",\r\n  \"telefono\": \"999111222\",\r\n  \"correo\": \"proveedor.prueba@example.com\",\r\n  \"direccion\": \"Av. Principal 456\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "proveedores",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Actualizar proveedor",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombre\": \"Proveedor de prueba actualizado\",\r\n  \"telefono\": \"999111222\",\r\n  \"correo\": \"proveedor.prueba@example.com\",\r\n  \"direccion\": \"Av. Principal 456\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "proveedores",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:08:05 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "76"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Proveedor actualizado correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eliminar proveedor",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "proveedores",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Eliminar proveedor",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "proveedores",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:09:18 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "74"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Proveedor eliminado correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eliminar proveedor con productos",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "proveedores",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Eliminar proveedor con productos",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/proveedores/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "proveedores",
+                    "1"
+                  ]
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:10:48 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "96"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": false,\n  \"message\": \"No se puede eliminar el proveedor porque tiene productos asociados\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clientes",
+      "item": [
+        {
+          "name": "Listar clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "clientes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Listar clientes",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "clientes"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:17:28 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "691"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Clientes obtenidos correctamente\",\n  \"data\": [\n    {\n      \"id_cliente\": 2,\n      \"nombres\": \"Diego\",\n      \"apellidos\": \"Mendoza Torres\",\n      \"correo\": \"diegomendoza.4382@gmail.com\",\n      \"telefono\": \"976234567\",\n      \"direccion\": \"Jr. Las Palmeras 325, Lima\",\n      \"fecha_registro\": \"2026-11-24 00:32:15\"\n    },\n    {\n      \"id_cliente\": 1,\n      \"nombres\": \"Valeria\",\n      \"apellidos\": \"Quispe Ramos\",\n      \"correo\": \"valeriaquispe.2176@gmail.com\",\n      \"telefono\": \"987123456\",\n      \"direccion\": \"Av. Los Próceres 450, Lima\",\n      \"fecha_registro\": \"2026-11-24 00:32:15\"\n    },\n    {\n      \"id_cliente\": 3,\n      \"nombres\": \"Camila\",\n      \"apellidos\": \"Salazar Rojas\",\n      \"correo\": \"camilasalazar.7591@gmail.com\",\n      \"telefono\": \"965345678\",\n      \"direccion\": \"Calle Los Cedros 180, Lima\",\n      \"fecha_registro\": \"2026-11-24 00:32:15\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Crear cliente",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombres\": \"Ana\",\r\n  \"apellidos\": \"Prueba García\",\r\n  \"correo\": \"ana.prueba@example.com\",\r\n  \"telefono\": \"999123456\",\r\n  \"direccion\": \"Av. Principal 789\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "clientes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Crear cliente",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombres\": \"Ana\",\r\n  \"apellidos\": \"Prueba García\",\r\n  \"correo\": \"ana.prueba@example.com\",\r\n  \"telefono\": \"999123456\",\r\n  \"direccion\": \"Av. Principal 789\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "clientes"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:19:34 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "85"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Cliente registrado correctamente\",\n  \"data\": {\n    \"id_cliente\": 4\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Consultar cliente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "clientes",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Consultar cliente",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "clientes",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:22:16 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "256"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Cliente obtenido correctamente\",\n  \"data\": {\n    \"id_cliente\": 4,\n    \"nombres\": \"Ana\",\n    \"apellidos\": \"Prueba García\",\n    \"correo\": \"ana.prueba@example.com\",\n    \"telefono\": \"999123456\",\n    \"direccion\": \"Av. Principal 789\",\n    \"fecha_registro\": \"2026-11-24 18:19:34\"\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Actualizar cliente",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombres\": \"Ana María\",\r\n  \"apellidos\": \"Prueba García\",\r\n  \"correo\": \"ana.prueba@example.com\",\r\n  \"telefono\": \"999654321\",\r\n  \"direccion\": \"Av. Principal 800\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "clientes",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Actualizar cliente",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombres\": \"Ana María\",\r\n  \"apellidos\": \"Prueba García\",\r\n  \"correo\": \"ana.prueba@example.com\",\r\n  \"telefono\": \"999654321\",\r\n  \"direccion\": \"Av. Principal 800\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "clientes",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:22:23 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "74"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Cliente actualizado correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eliminar cliente",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "clientes",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Eliminar cliente",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "clientes",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:25:43 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "72"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Cliente eliminado correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eliminar cliente con pedidos",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "clientes",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Eliminar cliente con pedidos",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/clientes/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "clientes",
+                    "1"
+                  ]
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:26:43 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "92"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": false,\n  \"message\": \"No se puede eliminar el cliente porque tiene pedidos asociados\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pedidos",
+      "item": [
+        {
+          "name": "Listar pedidos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "pedidos"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Listar pedidos",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "pedidos"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:45:18 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "670"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Pedidos obtenidos correctamente\",\n  \"data\": [\n    {\n      \"id_pedido\": 3,\n      \"id_cliente\": 3,\n      \"cliente_nombres\": \"Camila\",\n      \"cliente_apellidos\": \"Salazar Rojas\",\n      \"fecha_pedido\": \"2026-11-24 00:32:15\",\n      \"estado\": \"ENTREGADO\",\n      \"direccion_entrega\": \"Calle Los Cedros 180, Lima\"\n    },\n    {\n      \"id_pedido\": 2,\n      \"id_cliente\": 2,\n      \"cliente_nombres\": \"Diego\",\n      \"cliente_apellidos\": \"Mendoza Torres\",\n      \"fecha_pedido\": \"2026-11-24 00:32:15\",\n      \"estado\": \"PAGADO\",\n      \"direccion_entrega\": \"Jr. Las Palmeras 325, Lima\"\n    },\n    {\n      \"id_pedido\": 1,\n      \"id_cliente\": 1,\n      \"cliente_nombres\": \"Valeria\",\n      \"cliente_apellidos\": \"Quispe Ramos\",\n      \"fecha_pedido\": \"2026-11-24 00:32:15\",\n      \"estado\": \"PENDIENTE\",\n      \"direccion_entrega\": \"Av. Los Próceres 450, Lima\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Crear pedido",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_cliente\": 1,\r\n  \"estado\": \"PENDIENTE\",\r\n  \"direccion_entrega\": \"Av. Prueba 123\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "pedidos"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Crear pedido",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"id_cliente\": 1,\r\n  \"estado\": \"PENDIENTE\",\r\n  \"direccion_entrega\": \"Av. Prueba 123\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "pedidos"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:47:19 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "83"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Pedido registrado correctamente\",\n  \"data\": {\n    \"id_pedido\": 4\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Consultar pedido",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "pedidos",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Consultar pedido",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "pedidos",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:48:44 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "254"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Pedido obtenido correctamente\",\n  \"data\": {\n    \"id_pedido\": 4,\n    \"id_cliente\": 1,\n    \"cliente_nombres\": \"Valeria\",\n    \"cliente_apellidos\": \"Quispe Ramos\",\n    \"fecha_pedido\": \"2026-11-24 18:47:19\",\n    \"estado\": \"PENDIENTE\",\n    \"direccion_entrega\": \"Av. Prueba 123\"\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Actualizar pedido",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_cliente\": 1,\r\n  \"estado\": \"CANCELADO\",\r\n  \"direccion_entrega\": \"Av. Prueba 456\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "pedidos",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Actualizar pedido",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"id_cliente\": 1,\r\n  \"estado\": \"CANCELADO\",\r\n  \"direccion_entrega\": \"Av. Prueba 456\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "pedidos",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:50:21 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "73"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Pedido actualizado correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Crear pedido con cliente inexistente",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_cliente\": 4294967295,\r\n  \"estado\": \"PENDIENTE\",\r\n  \"direccion_entrega\": \"Av. Prueba 123\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "pedidos"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Crear pedido con cliente inexistente",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"id_cliente\": 4294967295,\r\n  \"estado\": \"PENDIENTE\",\r\n  \"direccion_entrega\": \"Av. Prueba 123\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "pedidos"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:54:12 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "59"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": false,\n  \"message\": \"El cliente indicado no existe\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eliminar pedido",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "pedidos",
+                "4"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Eliminar pedido",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "3657%20Trillo%20Allende%20Rosario",
+                    "public",
+                    "api",
+                    "pedidos",
+                    "4"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 24 Nov 2026 23:55:40 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.12"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type, Authorization"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "71"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5, max=100"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"success\": true,\n  \"message\": \"Pedido eliminado correctamente\",\n  \"data\": null\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Detalle de pedidos",
+      "item": [
+        {
+          "name": "Crear pedido",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_cliente\": 1,\r\n  \"estado\": \"PENDIENTE\",\r\n  \"direccion_entrega\": \"Dirección para prueba de detalles\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Detalle de pedidos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/detalle-pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "detalle-pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear detalle:",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_pedido\": 5,\r\n  \"id_producto\": 1,\r\n  \"cantidad\": 1,\r\n  \"precio_unitario\": \"4299.00\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/detalle-pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "detalle-pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Consultar detalle",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/detalle-pedidos/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "detalle-pedidos",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar detalle",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id_pedido\": 4,\r\n  \"id_producto\": 1,\r\n  \"cantidad\": 2,\r\n  \"precio_unitario\": \"4299.00\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost/3657%20Trillo%20Allende%20Rosario/public/api/detalle-pedidos/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "3657%20Trillo%20Allende%20Rosario",
+                "public",
+                "api",
+                "detalle-pedidos",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar detalle",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
