@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Tienda | Celulares y tecnología</title>
+
+<link
+    rel="stylesheet"
+    href="<?= htmlspecialchars(dirname(BASE_URL), ENT_QUOTES, 'UTF-8') ?>/src/output.css"
+>
+</head>
+
+<body
+    class="bg-gray-100 text-gray-800"
+    data-api-productos="<?= htmlspecialchars(BASE_URL, ENT_QUOTES, 'UTF-8') ?>/api/productos"
+>
+
+
+    <!-- Barra de navegación -->
+    <nav class="sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-4 shadow-sm">
+
+        <!-- Logo -->
+        <a href="#inicio" class="flex items-center gap-2">
+            <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600 font-bold text-white">
+                M
+            </div>
+
+            <span class="text-xl font-bold text-gray-800">
+                Mi <span class="text-blue-600">Tienda</span>
+            </span>
+        </a>
+
+        <!-- Acciones visuales -->
+        <div class="flex items-center gap-3">
+           <a
+    href="<?= htmlspecialchars(BASE_URL, ENT_QUOTES, 'UTF-8') ?>/admin"
+    class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+>
+    Ver panel
+</a>
+
+
+            <button
+                type="button"
+                class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+            >
+                Carrito
+
+                <span class="ml-1 rounded-full bg-white px-2 py-0.5 text-xs font-bold text-blue-600">
+                    0
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Vista principal -->
+    <div id="vista-lista">
+
+        <!-- Presentación -->
+        <section
+            id="inicio"
+            class="overflow-hidden bg-gradient-to-r from-blue-700 to-blue-500 px-6 py-16 text-white"
+        >
+            <div class="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
+
+                <div>
+                    <span class="rounded-full bg-blue-400/30 px-3 py-1 text-sm font-medium text-blue-100">
+                        Tecnología al mejor precio
+                    </span>
+
+                    <h1 class="mt-5 text-4xl font-bold leading-tight md:text-5xl">
+                        Encuentra el celular ideal para ti.
+                    </h1>
+
+                    <p class="mt-5 max-w-xl text-blue-100">
+                        Descubre smartphones, tablets y accesorios de las mejores
+                        marcas. Compra tecnología de forma rápida, segura y sencilla.
+                    </p>
+
+                    <div class="mt-10 flex gap-8 text-sm">
+                        <div>
+                            <p class="text-2xl font-bold">+100</p>
+                            <p class="text-blue-100">Productos</p>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl font-bold">+500</p>
+                            <p class="text-blue-100">Clientes</p>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl font-bold">24/7</p>
+                            <p class="text-blue-100">Soporte</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="rounded-3xl bg-white/10 p-6 shadow-xl">
+                        <img
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80"
+                            alt="Celular moderno"
+                            class="h-80 w-56 rounded-2xl object-cover shadow-2xl"
+                        >
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="border-b border-gray-200 bg-white px-6 py-8">
+            <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+
+                <article class="flex items-center gap-4">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-2xl">
+                        🚚
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-gray-800">
+                            Envíos rápidos
+                        </h3>
+
+                        <p class="text-sm text-gray-500">
+                            Recibe tu pedido de forma segura.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flex items-center gap-4">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-2xl">
+                        🛡️
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-gray-800">
+                            Compra segura
+                        </h3>
+
+                        <p class="text-sm text-gray-500">
+                            Productos originales y garantizados.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flex items-center gap-4">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-2xl">
+                        💬
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-gray-800">
+                            Asesoría personalizada
+                        </h3>
+
+                        <p class="text-sm text-gray-500">
+                            Te ayudamos a elegir tu equipo.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Filtros por categoría -->
+        <section class="border-b border-gray-200 bg-gray-50">
+            <div
+                id="filtros-categorias"
+                class="mx-auto flex max-w-6xl flex-wrap justify-center gap-2 px-6 py-4"
+            >
+                <button
+                    type="button"
+                    data-categoria="todos"
+                    aria-pressed="true"
+                    class="rounded-full bg-blue-600 px-4 py-1.5 text-sm font-medium text-white"
+                >
+                    Todos
+                </button>
+
+                <button
+                    type="button"
+                    data-categoria="Celulares"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
+                    Celulares
+                </button>
+
+                <button
+                    type="button"
+                    data-categoria="Laptops"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
+                    Laptops
+                </button>
+
+                <button
+                    type="button"
+                    data-categoria="Tablets"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
+                    Tablets
+                </button>
+
+                <button
+                    type="button"
+                    data-categoria="Computadoras"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
+                    Computadoras
+                </button>
+
+                <button
+                    type="button"
+                    data-categoria="Accesorios"
+                    aria-pressed="false"
+                    class="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100"
+                >
+                    Accesorios
+                </button>
+            </div>
+        </section>
+
+        <!-- Catálogo -->
+        <section id="productos" class="mx-auto max-w-6xl px-6 py-14">
+
+            <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">
+                        Catálogo
+                    </p>
+
+                    <h2 class="mt-1 text-3xl font-bold text-gray-800">
+                        Productos destacados
+                    </h2>
+
+                    <p class="mt-2 text-gray-500">
+                        Explora algunos de los equipos disponibles.
+                    </p>
+                </div>
+
+                <span class="rounded-lg bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
+                    Nuevos productos cada semana
+                </span>
+            </div>
+
+            <!-- Mensajes de carga, errores o resultados -->
+            <p
+                id="mensaje-catalogo"
+                class="mb-4 text-sm text-gray-600"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <!-- Las tarjetas se generan desde app.js -->
+            <section
+                id="vista-productos"
+                class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                aria-label="Lista de productos"
+            ></section>
+        </section>
+
+        <!-- Marcas -->
+        <section class="bg-white px-6 py-12">
+            <div class="mx-auto max-w-6xl text-center">
+
+                <p class="text-sm font-semibold uppercase tracking-wide text-gray-500">
+                    Marcas disponibles
+                </p>
+
+                <div class="mt-7 grid grid-cols-2 gap-4 text-lg font-bold text-gray-500 sm:grid-cols-4">
+                    <div class="rounded-lg bg-gray-100 px-4 py-4">
+                        Apple
+                    </div>
+
+                    <div class="rounded-lg bg-gray-100 px-4 py-4">
+                        Samsung
+                    </div>
+
+                    <div class="rounded-lg bg-gray-100 px-4 py-4">
+                        Xiaomi
+                    </div>
+
+                    <div class="rounded-lg bg-gray-100 px-4 py-4">
+                        Oppo
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sobre nosotros -->
+        <section id="sobre" class="px-6 py-16">
+            <div class="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
+
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">
+                        Sobre nosotros
+                    </p>
+
+                    <h2 class="mt-2 text-3xl font-bold text-gray-800">
+                        Tecnología que te mantiene conectado.
+                    </h2>
+
+                    <p class="mt-5 leading-relaxed text-gray-600">
+                        Tu marketplace de confianza. Encuentra lo último en
+                        tecnología, smartphones y moda para toda la familia.
+                        Calidad, variedad y los mejores precios. ¡Compra seguro hoy!
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-xl bg-blue-600 p-6 text-white">
+                        <p class="text-3xl font-bold">100%</p>
+
+                        <p class="mt-2 text-sm text-blue-100">
+                            Productos con descuento
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl bg-white p-6 shadow-sm">
+                        <p class="text-3xl font-bold text-blue-600">3</p>
+
+                        <p class="mt-2 text-sm text-gray-500">
+                            Categorías principales
+                        </p>
+                    </div>
+
+                    <div class="col-span-2 rounded-xl bg-gray-800 p-6 text-white">
+                        <h3 class="font-bold">
+                            Nuestra misión
+                        </h3>
+
+                        <p class="mt-2 text-sm leading-relaxed text-gray-300">
+                            Ofrecer una experiencia sencilla para explorar productos
+                            tecnológicos desde una página moderna y clara.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="bg-white px-6 py-14">
+            <div class="mx-auto max-w-6xl">
+
+                <div class="mb-8 text-center">
+                    <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">
+                        Servicios
+                    </p>
+
+                    <h2 class="mt-2 text-3xl font-bold text-gray-800">
+                        Más que una tienda de celulares
+                    </h2>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-3">
+
+                    <article class="rounded-xl border border-gray-200 p-6 text-center">
+                        <div class="text-3xl">📱</div>
+
+                        <h3 class="mt-3 font-bold text-gray-800">
+                            Venta de celulares
+                        </h3>
+
+                        <p class="mt-2 text-sm text-gray-500">
+                            Diferentes equipos, marcas y capacidades de almacenamiento.
+                        </p>
+                    </article>
+
+                    <article class="rounded-xl border border-gray-200 p-6 text-center">
+                        <div class="text-3xl">🎧</div>
+
+                        <h3 class="mt-3 font-bold text-gray-800">
+                            Accesorios
+                        </h3>
+
+                        <p class="mt-2 text-sm text-gray-500">
+                            Cargadores, audífonos, protectores y fundas.
+                        </p>
+                    </article>
+
+                    <article class="rounded-xl border border-gray-200 p-6 text-center">
+                        <div class="text-3xl">🔧</div>
+
+                        <h3 class="mt-3 font-bold text-gray-800">
+                            Soporte técnico
+                        </h3>
+
+                        <p class="mt-2 text-sm text-gray-500">
+                            Próximamente: asesoría y soporte para dispositivos.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="bg-blue-600 px-6 py-14 text-white">
+            <div class="mx-auto max-w-4xl text-center">
+
+                <h2 class="text-3xl font-bold">
+                    Información de contacto
+                </h2>
+
+                <div class="mt-8 grid gap-4 text-sm sm:grid-cols-3">
+
+                    <div class="rounded-lg bg-blue-700 p-4">
+                        <p class="font-semibold">
+                            Correo
+                        </p>
+
+                        <p class="mt-1 text-blue-100">
+                            rosario.trillo07@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="rounded-lg bg-blue-700 p-4">
+                        <p class="font-semibold">
+                            Teléfono
+                        </p>
+
+                        <p class="mt-1 text-blue-100">
+                            993675432
+                        </p>
+                    </div>
+
+                    <div class="rounded-lg bg-blue-700 p-4">
+                        <p class="font-semibold">
+                            Dirección
+                        </p>
+
+                        <p class="mt-1 text-blue-100">
+                            Jr. de la Unión 257, Lima - Perú
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="bg-gray-800 px-6 py-8 text-center text-sm text-gray-300">
+            <p>© 2026 Mi Tienda. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+
+    <!-- Vista de detalle del producto -->
+    <section id="vista-detalle" class="hidden px-6 py-12">
+        <div class="mx-auto max-w-4xl">
+
+            <button
+                id="btn-volver"
+                type="button"
+                class="mb-6 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+            >
+                ← Volver al catálogo
+            </button>
+
+            <div class="flex flex-col gap-8 rounded-2xl bg-white p-6 shadow-md md:flex-row">
+
+                <div class="flex items-center justify-center md:w-1/2">
+                    <img
+                        id="det-imagen"
+                        alt="Producto seleccionado"
+                        class="h-72 w-full object-contain"
+                        hidden
+                    >
+                </div>
+
+                <div class="flex-1">
+                    <span
+                        id="det-categoria"
+                        class="rounded-full bg-blue-100 px-2 py-1 text-xs capitalize text-blue-700"
+                    ></span>
+
+                    <h2
+                        id="det-titulo"
+                        class="mt-3 text-2xl font-bold text-gray-800"
+                    ></h2>
+
+                    <p
+                        id="det-precio"
+                        class="mt-3 text-3xl font-bold text-blue-600"
+                    ></p>
+
+                    <p
+                        id="det-rating"
+                        class="mt-2 text-yellow-500"
+                    ></p>
+
+                    <p
+                        id="det-desc"
+                        class="mt-4 leading-relaxed text-gray-600"
+                    ></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lógica del catálogo -->
+<script
+    src="<?= htmlspecialchars(dirname(BASE_URL), ENT_QUOTES, 'UTF-8') ?>/app.js"
+></script>
+
+</body>
+</html>

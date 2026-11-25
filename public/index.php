@@ -58,6 +58,11 @@ $uri = parse_url(
 // =====================================
 
 $basePath = '/3657%20Trillo%20Allende%20Rosario/public';
+// Ruta base para construir enlaces dentro de las vistas.
+define('BASE_URL', $basePath);
+
+// Cargar las rutas de las páginas.
+require_once __DIR__ . '/../routes/web.php';
 
 
 if (str_starts_with($uri, $basePath)) {

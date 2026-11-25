@@ -49,11 +49,42 @@ La dirección puede variar según la ubicación local del proyecto.
 La colección de peticiones se encuentra en la carpeta `postman/`.
 Puede importarse en Postman para revisar y ejecutar las solicitudes.
 
-**Documentación publicada:** [https://documenter.getpostman.com/view/37384403/2sBYPv4YaT]
+**Documentación publicada:**  
+<https://documenter.getpostman.com/view/37384403/2sBYPv4YaT>
 
-Las peticiones de creación, actualización y eliminación modifican datos.
-Algunas utilizan IDs de prueba que pueden haber sido eliminados y deben
-ajustarse antes de volver a ejecutarlas.
+Las peticiones de creación, actualización y eliminación modifican
+datos. Algunas utilizan IDs de prueba que pueden haber sido eliminados
+y deben ajustarse antes de volver a ejecutarlas.
+
+## Avance adicional: interfaz web
+
+Como avance adicional, el proyecto incorpora:
+
+- Una página principal que consulta los productos activos desde la API.
+- Una vista de detalle de productos.
+- Un panel visual con vistas de consulta para productos y categorías.
+- Búsqueda en el navegador sobre los datos cargados en esas vistas.
+
+Este frontend es un avance adicional a las pruebas de la PA4.
+
+### Acceso a la interfaz
+
+Con Apache y MySQL iniciados, y usando la ubicación del proyecto
+durante el desarrollo:
+
+- Tienda: `http://localhost/3657%20Trillo%20Allende%20Rosario/public/`
+- Panel visual: `http://localhost/3657%20Trillo%20Allende%20Rosario/public/admin`
+
+Las direcciones pueden variar según la carpeta donde se instale
+el proyecto y la configuración de `$basePath`.
+
+El panel es una demostración local: todavía no cuenta con inicio
+de sesión ni control de acceso. Sus vistas son de consulta, pero las
+API CRUD son independientes de ellas y no deben considerarse protegidas
+por el panel.
+
+El carrito y el inicio de sesión aún no están implementados como
+funcionalidades.
 
 ## Consideraciones
 

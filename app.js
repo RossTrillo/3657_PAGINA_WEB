@@ -1,8 +1,10 @@
 // La ruta es relativa a index.html, ubicado en la raíz del proyecto.
-const API_PRODUCTOS = new URL(
-  "./public/api/productos",
-  document.baseURI,
-).href;
+// Usa la ruta enviada por la vista PHP.
+// Si se abre el index.html anterior, conserva la ruta relativa original.
+const API_PRODUCTOS =
+  document.body.dataset.apiProductos ||
+  new URL("./public/api/productos", document.baseURI).href;
+
 
 // Elementos principales de la página.
 const vistaLista = document.getElementById("vista-lista");
